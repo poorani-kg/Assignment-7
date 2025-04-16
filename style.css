@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header{
+  background-image: url(shoe.jpg);
+  background-size: cover;
+  background-position: center;
+ background-attachment: fixed;
+}
+.header{
+    height: 100vh;
+    width: 100%;
+}
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 30px;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    
+}
+
+
+.product-card{
+    width: 100%;
+    max-width: 250px;
+    border: 1px soil #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgb(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    background-color: white;
+    text-align: center;
+
+}
+
+.product-card:hover{
+    transform: scale(1.05);
+   
+    
+
+}
+.product-card img {
+    width: 100%;
+    height: 200px;
+    display: block;
+  }
+  
+  .product-items {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .product-items h3 {
+    margin: 10px 0;
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+.product-items p{
+    color: #333;
+    font-weight: bold;
+    margin: 10px 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+     
+  
+  
+  .product-items button {
+    padding: 10px;
+    margin: 10px 15px;
+    background-color: #0a74da;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .footer{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: smaller;
+    padding: 30px;
+  }
+
+
+
+  @media (max-width: 992px) {
+    .product-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .product-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .product-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  .forms{
+  margin: 50px;
+  }
+ 
