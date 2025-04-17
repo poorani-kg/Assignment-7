@@ -8,7 +8,7 @@
   background-image: url(shoe.jpg);
   background-size: cover;
   background-position: center;
- background-attachment: fixed;
+ 
 }
 .header{
     height: 100vh;
@@ -96,15 +96,16 @@
     .product-container {
       grid-template-columns: repeat(2, 1fr);
     }
+      .header{
+          background-attachment: scroll;
+          height: 60vh;
   }
   
   @media (max-width: 480px) {
     .product-container {
       grid-template-columns: 1fr;
     }
-      .product-card img {
-      width: 100%;
-    }
+    
   }
   .forms{
   margin: 50px;
