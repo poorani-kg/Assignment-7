@@ -104,6 +104,14 @@
   @media (max-width: 480px) {
     .product-container {
       grid-template-columns: 1fr;
+        justify-items: center;
+    }
+       .product-card{
+      width: 90%;
+
+    }
+    .product-card img{
+      width: 100%;
     }
     
   }
