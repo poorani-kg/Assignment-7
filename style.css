@@ -102,6 +102,9 @@
     .product-container {
       grid-template-columns: 1fr;
     }
+      .product-card img {
+      width: 100%;
+    }
   }
   .forms{
   margin: 50px;
